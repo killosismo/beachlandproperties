@@ -1,86 +1,157 @@
-import type { NextPage } from 'next'
+import type { GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 
-const Home: NextPage = () => {
+import Link from 'next/link'
+
+import Banner from '../components/Banner'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
+import LargeCard from '../components/LargeCard'
+import { sanityClient, urlFor } from "../sanity"
+import { Property, ForInvestors, Town } from '../typings'
+
+import LargeImageCard from '/public/LargeImageCard.jpg'
+import { fetchForInvestors } from '../utils/fetchForInvestors'
+import { fetchProperty } from '../utils/fetchProperty'
+import { fetchTown } from '../utils/fetchTown'
+
+
+
+
+type Props = {
+  properties: Property[];
+  forInvestorss: ForInvestors[];
+  towns: Town[];
+  
+  
+};
+
+
+
+
+function Home( { properties, forInvestorss, towns }: Props) {
+  
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <div className="">
       <Head>
-        <title>Create Next App</title>
+        <title>Beachland Properties</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
+      <Header />
+      <Banner />
+      <main className='max-w-7xl mx-auto px-8 sm:px-16'>
+        <section className='pt-6'>
+        <h2 className='text-4xl font-semibold pb-5'>Last Properties Added</h2>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 p-2 md:p-6'>
+        {properties?.map((property) => (
+          <Link key={property._id} href={`/property/${property.slug.current}`}>
+            <div className='border rounded-lg group cursor-pointer overflow-hidden'>
+            
+              <img className='h-68 w-full object-cover group-hover:scale-105 transition-transform duration-200 ease-in-out' src={urlFor(property.mainImage).url()!} alt="" />
+              <div className=' p-5 justify-between bg-white'>
+                <p className='text-lg font-bold'>{property.title}</p>
+                <div className=''>
+                <p>US${property.price}</p>
+                  <div className='flex space-x-4'>
+                  <p>Bedrooms: {property.bedrooms}</p>
+                <p>Bathrooms: {property.bathrooms}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
+          </Link>
+          
+        )
 
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and its API.
-            </p>
-          </a>
+        )}
+      </div>
+        
+      </section>
+      <LargeCard 
+      img={LargeImageCard} 
+      title="Keep up to date for awesome deals!" 
+      description="Explore Punta Cana’s amazing real estate deals" 
+      buttonText="Contact Now"
+      />
+      <section className='pt-6'>
+        <h2 className='text-4xl font-semibold pb-5'>For Investors</h2>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 p-2 md:p-6'>
+        {forInvestorss?.map((forInvestors) => (
+          <Link key={forInvestors._id} href={`/forInvestors/${forInvestors.slug.current}`}>
+            <div className='border rounded-lg group cursor-pointer overflow-hidden'>
+            
+              <img className='h-68 w-full object-cover group-hover:scale-105 transition-transform duration-200 ease-in-out' src={urlFor(forInvestors.mainImage).url()!} alt="" />
+              <div className=' p-5 justify-between bg-white'>
+                <p className='text-lg font-bold'>{forInvestors.title}</p>
+                <div className=''>
+                <p>US${forInvestors.price}</p>
+                  <div className='flex space-x-4'>
+                  <p>Bedrooms: {forInvestors.bedrooms}</p>
+                <p>Bathrooms: {forInvestors.bathrooms}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-          <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
+          </Link>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
+        )
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        )}
+      </div>
+
+      </section>
+
+
+      <section className='pt-6'>
+        <h2 className='text-4xl font-semibold pb-5'>Towns</h2>
+      <div className='flex space-x-3 overflow-scroll scrollbar-hide'>
+        {towns?.map((town) => (
+          <Link key={town._id} href={`${town.url}`}>
+            <div className='cursor-pointer hover:scale-105 transform transition duration-300 ease-out'>
+              <div className='relative h-60 w-60'>
+              <img className='object-fill rounded-xl' src={urlFor(town.mainImage).url()!} alt="" />
+              </div>
+              <p className='text-2xl mt-3'>{town.title}</p>
+            </div>
+            <br/>
+            </Link>
+          
+
+        )
+
+        )}
+      </div>
+
+      </section>
       </main>
-
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </a>
-      </footer>
+      <Footer />
     </div>
   )
 }
 
-export default Home
+export default Home;
+
+ export const getStaticProps: GetStaticProps<Props> = async () => {
+  const forInvestorss: ForInvestors[] = await fetchForInvestors();
+  const properties: Property[] = await fetchProperty();
+  const towns: Town[] = await fetchTown();
+
+  return {
+    props:{
+      forInvestorss,
+      properties,
+      towns,
+    },
+    revalidate: 60,
+  }
+}
+  
+
+
+
+
+
+
