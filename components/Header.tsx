@@ -11,9 +11,9 @@ function Header() {
             <Link href={'/'}> 
             <Image 
                   src={beachlandPhoto} 
-                  layout="fill"
-                  objectFit='contain' 
-                  objectPosition='left'
+                  fill
+                  className='object-contain object-left'
+                  
                   alt={''}            />
                   </Link>
         </div>
