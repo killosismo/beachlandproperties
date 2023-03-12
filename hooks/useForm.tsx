@@ -21,7 +21,7 @@ const useForm = (initialData : any, onValidate : any) => {
 
     if (Object.keys(err).length === 0) {
       setLoading(true)
-      fetch("https://formsubmit.co/ajax/enriquillo.billini@gmail.com", {
+      fetch("https://formsubmit.co/ajax/miguelmartinez@urbangroup.do", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json',
