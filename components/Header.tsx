@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import beachLandPhoto from '/public/beachlandLogo.jpg'
+import beachLandPhoto from '/public/beachLandLogo.jpg'
 import { MagnifyingGlassIcon } from '@heroicons/react/24/solid'
 import Link from 'next/link'
 
