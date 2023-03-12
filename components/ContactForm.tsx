@@ -18,40 +18,7 @@ const ContactForm = ({ property }: Props) => {
   }
 
   const onValidate = (form: any) => {
-    
-    let errors = {
-    titulo: '',
-    nombre: '',
-    correo: '',
-    numero: '',
-    proposito: '',
-    mensaje: ''}
-    
-    let regexName = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
-    let regexEmail = /^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$/;
-    let regexComments = /^.{1,255}$/;
-
-    if (!form.nombre.trim()) {
-      errors.nombre = 'The "Name" field must not be empty.'
-    } else if (!regexName.test(form.nombre)){
-      errors.nombre = 'The "Name" field only accepts letters and spaces.'
-    }
-
-    if (!form.correo.trim()) {
-      errors.correo = 'The "Email" field must not be empty.'
-    } else if (!regexEmail.test(form.correo)){
-      errors.correo = 'The "Email" field contains an invalid format.'
-    }
-
    
-
-    if (!form.mensaje.trim()) {
-      errors.mensaje = 'The "Menssage" field must not be empty.'
-    } else if (!regexComments.test(form.mensaje)){
-      errors.mensaje = 'The "Message" field accepts only 255 characters.'
-    }
-
-    return errors
   }
 
   const { form, errors, loading, handleChange, handleSubmit } = useForm(initialData, onValidate)
