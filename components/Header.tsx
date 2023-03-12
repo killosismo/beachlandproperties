@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import BeachLandPhoto from '/public/BeachLandLogo.jpg'
+
 import { MagnifyingGlassIcon } from '@heroicons/react/24/solid'
 import Link from 'next/link'
 
@@ -10,7 +10,7 @@ function Header() {
         <div className='relative flex items-center h-10 cursor-pointer my-auto'>
             <Link href={'/'}> 
             <Image 
-                  src={BeachLandPhoto} 
+                  src={'/public/BeachLandLogo.jpg'} 
                   fill
                   className='object-contain object-left'
                   
