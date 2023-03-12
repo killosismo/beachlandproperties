@@ -7,7 +7,6 @@ import Link from 'next/link';
 type Props = {
     town: Town;
 }
-
 const Info = ({ town }: Props) => {
   return (
     <div>
