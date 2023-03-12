@@ -3,12 +3,15 @@ import { ForInvestors } from "../typings";
 
 
 type Props = {
-  forInvestors: ForInvestors
+  forInvestors: ForInvestors,
+  
 };
+
+
 
 const ContactForm2 = ({ forInvestors }: Props) => {
 
-  const initialData = {
+  const initialData: any = {
     titulo: '',
     nombre: '',
     correo: '',
@@ -17,8 +20,13 @@ const ContactForm2 = ({ forInvestors }: Props) => {
     mensaje: ''
   }
 
+  
+
+
+
   const onValidate = (form: any) => {
-    let errors = {}
+    
+    let errors: any = {}
     let regexName = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
     let regexEmail = /^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$/;
     let regexComments = /^.{1,255}$/;
@@ -38,7 +46,7 @@ const ContactForm2 = ({ forInvestors }: Props) => {
    
 
     if (!form.mensaje.trim()) {
-      errors.mensaje = 'The "Menssage" field must not be empty.'
+      errors.mensaje = 'The "Message" field must not be empty.'
     } else if (!regexComments.test(form.mensaje)){
       errors.mensaje = 'The "Message" field accepts only 255 characters.'
     }
@@ -49,6 +57,8 @@ const ContactForm2 = ({ forInvestors }: Props) => {
   const { form, errors, loading, handleChange, handleSubmit } = useForm(initialData, onValidate)
 
   return (
+
+    
     <form className='flex flex-col space-y-2' onSubmit={handleSubmit}>
 
 <div className="">
@@ -56,35 +66,37 @@ const ContactForm2 = ({ forInvestors }: Props) => {
                       
 </label>
 <select 
+
   name="titulo"
   value={form.titulo}
   onChange={handleChange}
   className="mt-1 block w-full rounded-md border py-2 px-3"
    >
     <option>Select the property</option>
-<option>{forInvestors.title}</option>
+<option >{forInvestors.title}</option>
 
 </select>
 </div>
 
 
-      <label className='form-label'>Name</label>
-      <input type="text" className='border-2 rounded-lg py-2 px-3' name="nombre" value={form.nombre} onChange={handleChange}/>
-      {errors.nombre && <div className="alert alert-danger p-1">{errors.nombre}</div>}
+       <label className='form-label'>Name</label>
+      <input required type="text" className='border-2 rounded-lg py-2 px-3' name="nombre" value={form.nombre} onChange={handleChange}/>
+      
 
       <label className='form-label'>Email</label>
-      <input type="email" className='border-2 rounded-lg py-2 px-3' name="correo" value={form.correo} onChange={handleChange}/>
-      {errors.correo && <div className="alert alert-danger p-1">{errors.correo}</div>}
+      <input required type="email" className='border-2 rounded-lg py-2 px-3' name="correo" value={form.correo} onChange={handleChange}/>
+      
 
       <label className='form-label'>Number</label>
-      <input type="tel" className='border-2 rounded-lg py-2 px-3'name="numero" value={form.numero} onChange={handleChange}/>
-      {errors.numero && <div className="alert alert-danger p-1">{errors.numero}</div>}
+      <input required type="tel" className='border-2 rounded-lg py-2 px-3'name="numero" value={form.numero} onChange={handleChange}/>
+      
 
       <div className="">
                       <label htmlFor="purpose" className="">
                       What' is the purpose of your investment in DR?
                       </label>
                       <select
+                      required
                       name="proposito" 
                       value={form.proposito} 
                       onChange={handleChange}
@@ -99,9 +111,8 @@ const ContactForm2 = ({ forInvestors }: Props) => {
                     </div>
       
       <label className='form-label'>Message</label>
-      <textarea className='border-2 rounded-lg py-2 px-3' name="mensaje" value={form.mensaje} onChange={handleChange}/>
-      {errors.mensaje && <div className="alert alert-danger p-1">{errors.mensaje}</div>}
-
+      <textarea required className='border-2 rounded-lg py-2 px-3' name="mensaje" value={form.mensaje} onChange={handleChange}/>
+      
       <button className='text-sm text-white bg-gray-900 px-4 py-2 rounded-lg mt-5' disabled={loading}>{loading ? "Sending..." : "Send"}</button>
     </form>
   )

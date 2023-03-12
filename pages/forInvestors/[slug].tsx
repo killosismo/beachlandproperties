@@ -6,12 +6,14 @@ import PortableText from "react-portable-text";
 import Link from "next/link";
 import Footer from "../../components/Footer";
 import Image from "../../components/Image"
+
 import ModalImage from "react-modal-image";
 import ContactForm2 from "../../components/ContactForm2";
 
 interface Props {
   forInvestors: ForInvestors;
 }
+
 
 
 function ForInvestors ( {forInvestors}: Props)  {

@@ -6,6 +6,7 @@ import PortableText from "react-portable-text";
 import Link from "next/link";
 import Footer from "../../components/Footer";
 import Image from "../../components/Image"
+// @ts-ignore
 import ModalImage from "react-modal-image";
 import ContactForm from "../../components/ContactForm";
 

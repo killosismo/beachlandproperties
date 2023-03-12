@@ -18,7 +18,15 @@ const ContactForm = ({ property }: Props) => {
   }
 
   const onValidate = (form: any) => {
-    let errors = {}
+    
+    let errors = {
+    titulo: '',
+    nombre: '',
+    correo: '',
+    numero: '',
+    proposito: '',
+    mensaje: ''}
+    
     let regexName = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
     let regexEmail = /^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$/;
     let regexComments = /^.{1,255}$/;
@@ -69,16 +77,16 @@ const ContactForm = ({ property }: Props) => {
 
 
       <label className='form-label'>Name</label>
-      <input type="text" className='border-2 rounded-lg py-2 px-3' name="nombre" value={form.nombre} onChange={handleChange}/>
-      {errors.nombre && <div className="alert alert-danger p-1">{errors.nombre}</div>}
+      <input required type="text" className='border-2 rounded-lg py-2 px-3' name="nombre" value={form.nombre} onChange={handleChange}/>
+      
 
       <label className='form-label'>Email</label>
-      <input type="email" className='border-2 rounded-lg py-2 px-3' name="correo" value={form.correo} onChange={handleChange}/>
-      {errors.correo && <div className="alert alert-danger p-1">{errors.correo}</div>}
+      <input required type="email" className='border-2 rounded-lg py-2 px-3' name="correo" value={form.correo} onChange={handleChange}/>
+      
 
       <label className='form-label'>Number</label>
-      <input type="tel" className='border-2 rounded-lg py-2 px-3'name="numero" value={form.numero} onChange={handleChange}/>
-      {errors.numero && <div className="alert alert-danger p-1">{errors.numero}</div>}
+      <input required type="tel" className='border-2 rounded-lg py-2 px-3'name="numero" value={form.numero} onChange={handleChange}/>
+      
 
       <div className="">
                       <label htmlFor="purpose" className="">
@@ -99,8 +107,8 @@ const ContactForm = ({ property }: Props) => {
                     </div>
       
       <label className='form-label'>Message</label>
-      <textarea className='border-2 rounded-lg py-2 px-3' name="mensaje" value={form.mensaje} onChange={handleChange}/>
-      {errors.mensaje && <div className="alert alert-danger p-1">{errors.mensaje}</div>}
+      <textarea required className='border-2 rounded-lg py-2 px-3' name="mensaje" value={form.mensaje} onChange={handleChange}/>
+      
 
       <button className='text-sm text-white bg-gray-900 px-4 py-2 rounded-lg mt-5' disabled={loading}>{loading ? "Sending..." : "Send"}</button>
     </form>

@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 
 
-function LargeCard({img, title, description, buttonText} ) {
+function LargeCard({img, title, description, buttonText}: any ) {
   return (
     <section className='relative py-16 cursor-pointer'>
         <div className='relative h-96 min-w-[300px]'>

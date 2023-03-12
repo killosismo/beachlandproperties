@@ -1,5 +1,6 @@
 import { SelectHTMLAttributes } from "react";
 
+
 export interface Property{
     _type: "property"
     
@@ -68,7 +69,7 @@ export interface ForInvestors{
 
     description: string;
     seller: seller;
-
+    nombre: string;
 
 }
 
@@ -129,4 +130,7 @@ export interface PropertyTown{
     
     }
 
-   
+
+
+    
+    

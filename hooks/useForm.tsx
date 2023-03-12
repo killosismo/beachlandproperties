@@ -5,10 +5,14 @@ const useForm = (initialData : any, onValidate : any) => {
   const [loading, setLoading] = useState(false)
   const [errors, setErros] = useState({})
 
+  
+
   const handleChange = (event :any) => {
     const { name, value } = event.target
     setForm({ ...form, [name]: value })
   }
+
+  
 
   const handleSubmit = (event: any) => {
     event.preventDefault()
