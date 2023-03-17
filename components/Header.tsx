@@ -10,7 +10,7 @@ function Header() {
         <div className='relative flex items-center h-10 cursor-pointer my-auto'>
             <Link href={'/'}> 
             <Image 
-                  src={'/public/BeachLandLogo.jpg'} 
+                  src={'/BeachLandLogo.jpg'} 
                   fill
                   className='object-contain object-left'
                   

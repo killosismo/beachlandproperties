@@ -1,15 +1,12 @@
 import type { GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
-
 import Link from 'next/link'
-
 import Banner from '../components/Banner'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import LargeCard from '../components/LargeCard'
 import { sanityClient, urlFor } from "../sanity"
 import { Property, ForInvestors, Town } from '../typings'
-
 import LargeImageCard from '/public/LargeImageCard.jpg'
 import { fetchForInvestors } from '../utils/fetchForInvestors'
 import { fetchProperty } from '../utils/fetchProperty'
@@ -29,7 +26,7 @@ type Props = {
 
 
 
-function Home( { properties, forInvestorss, towns }: Props) {
+const Home = ( { properties, forInvestorss, towns }: Props) => {
   
   return (
     <div className="">
@@ -145,7 +142,7 @@ export default Home;
       properties,
       towns,
     },
-    revalidate: 60,
+    revalidate: 10,
   }
 }
   
