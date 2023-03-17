@@ -13,9 +13,9 @@ import { fetchProperty } from '../utils/fetchProperty'
 import { fetchTown } from '../utils/fetchTown'
 
 
+<h1>Hello</h1>
 
-
-type Props = {
+  /*type Props = {
   properties: Property[];
   forInvestorss: ForInvestors[];
   towns: Town[];
@@ -131,7 +131,7 @@ const Home = ( { properties, forInvestorss, towns }: Props) => {
 
 export default Home;
 
- export const getStaticProps: GetStaticProps<Props> = async () => {
+  export const getStaticProps: GetStaticProps<Props> = async () => {
   const forInvestorss: ForInvestors[] = await fetchForInvestors();
   const properties: Property[] = await fetchProperty();
   const towns: Town[] = await fetchTown();
@@ -151,4 +151,4 @@ export default Home;
 
 
 
-
+*/

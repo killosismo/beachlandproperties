@@ -8,8 +8,8 @@ import { GetStaticProps } from 'next'
 
 
 
-
-type Props = {
+<h1>Hello</h1>
+/*type Props = {
     towns: Town[];
     
 }
@@ -47,4 +47,4 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       towns,
     }
   }
-}
+}*/

@@ -7,9 +7,9 @@ import { fetchSantiago } from '../utils/fetchSantiago'
 import { GetStaticProps } from 'next'
 
 
+<h1>Hello</h1>
 
-
-type Props = {
+/*type Props = {
     towns: Town[];
     
 }
@@ -47,4 +47,4 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       towns,
     }
   }
-}
+}*/
