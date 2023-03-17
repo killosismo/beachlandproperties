@@ -9,8 +9,7 @@ import Image from "../../components/Image"
 import ModalImage from "react-modal-image";
 import ContactForm from "../../components/ContactForm";
 
-<h1>Hello</h1>
-/*interface Props {
+interface Props {
   property: Property;
 
 }
@@ -193,4 +192,4 @@ if (!property) {
     },
     revalidate: 10,
   }
-}*/
+}

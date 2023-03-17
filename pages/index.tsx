@@ -13,9 +13,7 @@ import { fetchProperty } from '../utils/fetchProperty'
 import { fetchTown } from '../utils/fetchTown'
 
 
-<h1>Hello</h1>
-
-  /*type Props = {
+type Props = {
   properties: Property[];
   forInvestorss: ForInvestors[];
   towns: Town[];
@@ -151,4 +149,4 @@ export default Home;
 
 
 
-*/
+

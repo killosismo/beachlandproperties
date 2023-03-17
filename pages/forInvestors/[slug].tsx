@@ -10,8 +10,7 @@ import ModalImage from "react-modal-image";
 import ContactForm2 from "../../components/ContactForm2";
 
 
-<h1>Hello</h1>
-/*interface Props {
+interface Props {
   forInvestors: ForInvestors;
 }
 
@@ -194,4 +193,4 @@ if (!forInvestors) {
     },
     revalidate: 10,
   }
-}*/
+}
