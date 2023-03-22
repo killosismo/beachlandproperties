@@ -12,7 +12,7 @@ import { fetchForInvestors } from '../utils/fetchForInvestors'
 import { fetchProperty } from '../utils/fetchProperty'
 import { fetchTown } from '../utils/fetchTown'
 
-/*
+
 type Props = {
   properties: Property[];
   forInvestorss: ForInvestors[];
@@ -21,14 +21,13 @@ type Props = {
   
 };
 
-*/
 
 
-const Home = ( /*{ properties, forInvestorss, towns }: Props*/) => {
+
+const Home = ( { properties, forInvestorss, towns }: Props) => {
   
   return (
-    <h1>la</h1>
-    /*<div className="">
+    <div className="">
       <Head>
         <title>Beachland Properties</title>
         <link rel="icon" href="/favicon.ico" />
@@ -125,13 +124,13 @@ const Home = ( /*{ properties, forInvestorss, towns }: Props*/) => {
       </main>
       <Footer />
     </div>
-    */
+    
   )
 }
 
 export default Home;
 
-  /*export const getStaticProps: GetStaticProps<Props> = async () => {
+  export const getStaticProps: GetStaticProps<Props> = async () => {
   const forInvestorss: ForInvestors[] = await fetchForInvestors();
   const properties: Property[] = await fetchProperty();
   const towns: Town[] = await fetchTown();
@@ -144,7 +143,7 @@ export default Home;
     },
     revalidate: 10,
   }
-}*/
+}
   
 
 
