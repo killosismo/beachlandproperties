@@ -20,5 +20,5 @@ export default async function handler(
   res: NextApiResponse<Data>
 ) {
   const towns: Town[] = await sanityClient.fetch(query);
-  res.status(200).json({ towns })
+  res.status(200).json({ towns });
 }

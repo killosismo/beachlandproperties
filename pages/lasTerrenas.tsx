@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Town } from '../typings'
 import Footer from '../components/Footer'
 import Header from '../components/Header'

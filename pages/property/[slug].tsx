@@ -9,7 +9,7 @@ import Image from "../../components/Image"
 import ModalImage from "react-modal-image";
 import ContactForm from "../../components/ContactForm";
 
-interface Props {
+type Props = {
   property: Property;
 
 }

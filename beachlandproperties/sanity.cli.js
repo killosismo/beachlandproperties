@@ -4,5 +4,6 @@ export default defineCliConfig({
   api: {
     projectId: 'lqpgcd61',
     dataset: 'production'
+    
   }
 })

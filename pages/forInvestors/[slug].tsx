@@ -10,7 +10,7 @@ import ModalImage from "react-modal-image";
 import ContactForm2 from "../../components/ContactForm2";
 
 
-interface Props {
+type Props = {
   forInvestors: ForInvestors;
 }
 
