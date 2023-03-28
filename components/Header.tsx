@@ -11,9 +11,9 @@ function Header({Img}: any) {
             <Link href={'/'}> 
             <Image 
                   src={Img} 
-                  fill
+                  layout='fill'
                   className='object-contain object-left'
-                  sizes=''
+                  
                   alt={''}            />
                   </Link>
         </div>
