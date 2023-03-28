@@ -13,7 +13,7 @@ function Header({Img}: any) {
                   src={Img} 
                   fill
                   className='object-contain object-left'
-                  
+                  sizes=''
                   alt={''}            />
                   </Link>
         </div>
