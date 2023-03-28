@@ -12,22 +12,16 @@ import { fetchForInvestors } from '../utils/fetchForInvestors'
 import { fetchProperty } from '../utils/fetchProperty'
 import { fetchTown } from '../utils/fetchTown'
 
-/*
+
 type Props = {
   properties: Property[];
   forInvestorss: ForInvestors[];
   towns: Town[];
   
   
-};*/
-const Home = () => {
-  
-  return ( 
-    <h1>3</h1>
-  )}
-  
-  export default Home;
-/*
+};
+
+
 const Home = ( { properties, forInvestorss, towns }: Props) => {
   
   return (
@@ -150,7 +144,7 @@ export default Home;
 }
   
 
-*/
+
 
 
 
