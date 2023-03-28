@@ -11,7 +11,7 @@ import LargeImageCard from '/public/LargeImageCard.jpg'
 import { fetchForInvestors } from '../utils/fetchForInvestors'
 import { fetchProperty } from '../utils/fetchProperty'
 import { fetchTown } from '../utils/fetchTown'
-import Logo from '/public/qBeachLandLogo.jpg'
+
 
 
 type Props = {
@@ -32,7 +32,7 @@ const Home = ( { properties, forInvestorss, towns }: Props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header Img={Logo}/>
+      <Header />
       <Banner />
       <main className='max-w-7xl mx-auto px-8 sm:px-16'>
         <section className='pt-6'>
