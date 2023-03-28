@@ -1,7 +1,7 @@
 
 import Image from 'next/image'
 
-import ReactPlayer from 'react-player'
+
 
 function Banner() {
   return (
