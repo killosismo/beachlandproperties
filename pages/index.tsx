@@ -5,7 +5,7 @@ import Banner from '../components/Banner'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import LargeCard from '../components/LargeCard'
-import { sanityClient, urlFor } from "../sanity"
+import { urlFor } from "../sanity"
 import { Property, ForInvestors, Town } from '../typings'
 import LargeImageCard from '/public/LargeImageCard.jpg'
 import { fetchForInvestors } from '../utils/fetchForInvestors'
