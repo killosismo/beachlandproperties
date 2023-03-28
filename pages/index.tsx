@@ -11,7 +11,7 @@ import LargeImageCard from '/public/LargeImageCard.jpg'
 import { fetchForInvestors } from '../utils/fetchForInvestors'
 import { fetchProperty } from '../utils/fetchProperty'
 import { fetchTown } from '../utils/fetchTown'
-import Logo from '/public/BeachLandLogo.jpg'
+import Logo from '/public/qBeachLandLogo.jpg'
 
 
 type Props = {
