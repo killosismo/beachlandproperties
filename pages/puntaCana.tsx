@@ -43,6 +43,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   return {
     props:{
       towns,
-    }
+    },
+    revalidate: 10,
   }
 }
