@@ -64,9 +64,9 @@ function ForInvestors ( {forInvestors}: Props)  {
             <br/>
             <h4><b>Reserve: US$</b> {forInvestors.reserve}</h4>
             <br/>
-            <h4><b>Payplan:</b> {forInvestors.description}</h4>
+            <h4><b>Pay plan:</b> {forInvestors.description}</h4>
             <br/>
-            <h4><b>Appliances (linea blanca):</b> {forInvestors.appliances}</h4>
+            <h4><b>Appliances:</b> {forInvestors.appliances}</h4>
             <br/>
             <h4><b>Furnished:</b> {forInvestors.furnished}</h4>
             <br/>

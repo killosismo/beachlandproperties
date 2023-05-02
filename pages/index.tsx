@@ -35,9 +35,9 @@ const Home = ( { properties, forInvestorss, towns }: Props) => {
       <Header />
       <Banner />
       <main className='max-w-7xl mx-auto px-8 sm:px-16'>
-        <section className='pt-6'>
+        <section className='pt-6' id="ForSale">
         <h2 className='text-4xl font-semibold pb-5'>Last Properties Added</h2>
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 p-2 md:p-6'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 p-2 md:p-6 '>
         {properties?.map((property) => (
           <Link key={property._id} href={`/property/${property.slug.current}`}>
             <div className='border rounded-lg group cursor-pointer overflow-hidden'>
@@ -99,7 +99,7 @@ const Home = ( { properties, forInvestorss, towns }: Props) => {
       </section>
 
 
-      <section className='pt-6'>
+      <section className='pt-6' id="Towns">
         <h2 className='text-4xl font-semibold pb-5'>Towns</h2>
       <div className='flex space-x-3 overflow-scroll scrollbar-hide'>
         {towns?.map((town) => (

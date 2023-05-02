@@ -21,25 +21,24 @@ const Info = ({ town }: Props) => {
            key={property._id}
            src={urlFor(property.mainImage).url()!}
            className='object-cover'
-           
            alt={''}
            />
           </div>
           <div className='flex flex-col flex-grow pl-5'>
           <div className='flex justify-between'>
-            <p>location</p>
+            <h2><b>{property.propertyType}</b></h2>
           </div>
           <h4 className='text-xl'>{property.title}</h4>
 
           <div className='border-b w-10 pt-2' />
 
-          <p className='pt-2 text-sm text-gray-500 flex-grow'>Description</p>
+          <p className='pt-2 text-sm text-gray-500 flex-grow'>Bedrooms: {property.bedrooms} | Bathrooms: {property.bathrooms}</p>
 
           <div className='flex justify-between items-end pt-5'>
-            <p className='flex items-center'>*</p>
+            <p className='flex items-center'>Delivery date {property.delDate}</p>
 
             <div>
-              <p className='text-lg lg:text-2xl font-semibold pb-2'>Price {property.price}</p>
+              <p className='text-lg lg:text-2xl font-semibold pb-2'>US$ {property.price}</p>
             </div>
 
           </div>

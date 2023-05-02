@@ -63,9 +63,9 @@ function Property ( {property}: Props)  {
             <br/>
             <h4><b>Reserve: US$</b> {property.reserve}</h4>
             <br/>
-            <h4><b>Payplan:</b> {property.description}</h4>
+            <h4><b>Pay plan:</b> {property.description}</h4>
             <br/>
-            <h4><b>Appliances (linea blanca):</b> {property.appliances}</h4>
+            <h4><b>Appliances:</b> {property.appliances}</h4>
             <br/>
             <h4><b>Furnished:</b> {property.furnished}</h4>
             <br/>

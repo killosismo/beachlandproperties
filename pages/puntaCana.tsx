@@ -16,7 +16,9 @@ const puntaCana = ({ towns }: Props) => {
   return (
     <div className=''>
     <Header />
-    <section>
+    <section className='flex-grow pt-14 px-6'>
+
+<h1 className='text-3xl font-semibold mt-2 mb-6'>Punta Cana</h1>
 
     
         
@@ -25,9 +27,9 @@ const puntaCana = ({ towns }: Props) => {
     
     
 
-    <Footer />
+    
     </section>
-
+    <Footer />
     
     </div>
   )
