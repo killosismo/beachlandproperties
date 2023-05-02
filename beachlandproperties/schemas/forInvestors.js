@@ -59,15 +59,15 @@ export default {
         {
           title: 'Delivery date',
           name: 'delDate',
-          type: 'date'
+          type: 'string'
         },
         {
           name: 'reserve',
           title: 'Reserve',
-          type:'number',
+          type:'string',
           },
         {
-          title: 'Appliances (linea blanca)',
+          title: 'Appliances',
           name: 'appliances',
           type: 'string',
           options:{
@@ -120,7 +120,7 @@ export default {
           },
           {
             name: 'description',
-            title: 'Description',
+            title: 'Pay plan',
             type: 'string',
           },
           {
