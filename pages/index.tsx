@@ -59,7 +59,7 @@ const Home = ( { properties, forInvestorss, towns }: Props) => {
           
         )
 
-        )}
+        ).slice(0,8)}
       </div>
         
       </section>
@@ -93,15 +93,15 @@ const Home = ( { properties, forInvestorss, towns }: Props) => {
 
         )
 
-        )}
+        ).slice(0,8)}
       </div>
 
       </section>
 
 
-      <section className='pt-6' id="Towns">
+      <section className='pt-6 ' id="Towns">
         <h2 className='text-4xl font-semibold pb-5'>Towns</h2>
-      <div className='flex space-x-3 overflow-scroll scrollbar-hide'>
+      <div className='flex space-x-3 overflow-auto scrollbar-thumb md:p-6'>
         {towns?.map((town) => (
           <Link key={town._id} href={`${town.url}`}>
             <div className='cursor-pointer hover:scale-105 transform transition duration-300 ease-out'>

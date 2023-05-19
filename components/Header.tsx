@@ -20,8 +20,8 @@ function Header() {
             <Image 
                   src={Logo} 
                   className='object-contain object-left'
-                  width={100}
-                  height={77}
+                  width={75}
+                  height={57}
                   alt={''}
                   />
                   </Link>
@@ -38,8 +38,12 @@ function Header() {
           <a href="https://beachlandproperties.vercel.app/#Towns">
             <div>Locations</div>
           </a>
+          <a href="https://beachlandproperties.vercel.app/services">
           <div>Other Services</div>
+          </a>
+          <a href="https://beachlandproperties.vercel.app/contact">
           <div>Contact Us</div>
+          </a>
 
         </div>
         <>
@@ -50,10 +54,10 @@ function Header() {
           
       </div>
       <Menu className="burger-menu" isOpen={isOpen}  selectedKey={'entry'} onClose={() => setIsOpen(false)}>
-        <a href="https://beachlandproperties.vercel.app/#ForSale"><Item itemKey={'manage'} text={'For Sale'}></Item></a>
+        <a href="https://beachlandproperties.vercel.app/#ForSale"><Item itemKey={'ForSale'} text={'For Sale'}></Item></a>
         <a href="https://beachlandproperties.vercel.app/#Towns"><Item itemKey={'Towns'} text={'Locations'}></Item></a>
-        <Item itemKey={'user'} text={'Other Services'}></Item>
-        <Item itemKey={'user'} text={'Contact Us'}></Item>
+        <a href="https://beachlandproperties.vercel.app/services"><Item itemKey={'Services'} text={'Other Services'}></Item></a>
+        <a href="https://beachlandproperties.vercel.app/contact"><Item itemKey={'contact'} text={'Contact Us'}></Item></a>
         
       </Menu>
     </>
