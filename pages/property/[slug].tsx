@@ -48,6 +48,8 @@ function Property ( {property}: Props)  {
             <h2>{property.propertyType} selling by <b>{property.seller.name}</b></h2>
             <br/>
             <hr/>
+            <div className="grid grid-cols-1 md:grid-cols-2">
+              <div>
             <br/>
             <h2><b>Price starting at US$ </b>{property.price}</h2>
             <br/>
@@ -59,6 +61,9 @@ function Property ( {property}: Props)  {
             <br/>
             <h4><b>Square MT:</b> {property.mt}</h4>
             <br/>
+            </div>
+            <div>
+            <br/>
             <h4><b>Delivery date:</b> {property.delDate}</h4>
             <br/>
             <h4><b>Reserve: US$</b> {property.reserve}</h4>
@@ -69,6 +74,8 @@ function Property ( {property}: Props)  {
             <br/>
             <h4><b>Furnished:</b> {property.furnished}</h4>
             <br/>
+            </div>
+            </div>
             <hr/>
             <br/>
                   

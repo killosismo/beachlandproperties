@@ -59,7 +59,7 @@ const ContactForm2 = ({ forInvestors }: Props) => {
       <input required type="email" className='border-2 rounded-lg py-2 px-3' name="correo" value={form.correo} onChange={handleChange}/>
       
 
-      <label className='form-label'>Number</label>
+      <label className='form-label'>Phone number</label>
       <input required type="tel" className='border-2 rounded-lg py-2 px-3'name="numero" value={form.numero} onChange={handleChange}/>
       
 

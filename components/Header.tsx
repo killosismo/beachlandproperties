@@ -32,16 +32,16 @@ function Header() {
             <MagnifyingGlassIcon className=' hidden md:inline-flex h-8 bg-black text-white rounded-full p-2 cursor-pointer md:mx-2'/>
           </div>*/}
         <div className='flex py-1 space-x-5 invisible sm:visible '>
-        <a href="https://beachlandproperties.vercel.app/#ForSale">
+        <a href="https://beachlandproperties.com/#ForSale">
           <div className='' id="">For Sale</div>
           </a>
-          <a href="https://beachlandproperties.vercel.app/#Towns">
+          <a href="https://beachlandproperties.com/#Towns">
             <div>Locations</div>
           </a>
-          <a href="https://beachlandproperties.vercel.app/services">
+          <a href="https://beachlandproperties.com/services">
           <div>Other Services</div>
           </a>
-          <a href="https://beachlandproperties.vercel.app/contact">
+          <a href="https://beachlandproperties.com/contact">
           <div>Contact Us</div>
           </a>
 
@@ -54,10 +54,10 @@ function Header() {
           
       </div>
       <Menu className="burger-menu" isOpen={isOpen}  selectedKey={'entry'} onClose={() => setIsOpen(false)}>
-        <a href="https://beachlandproperties.vercel.app/#ForSale"><Item itemKey={'ForSale'} text={'For Sale'}></Item></a>
-        <a href="https://beachlandproperties.vercel.app/#Towns"><Item itemKey={'Towns'} text={'Locations'}></Item></a>
-        <a href="https://beachlandproperties.vercel.app/services"><Item itemKey={'Services'} text={'Other Services'}></Item></a>
-        <a href="https://beachlandproperties.vercel.app/contact"><Item itemKey={'contact'} text={'Contact Us'}></Item></a>
+        <a href="https://beachlandproperties.com/#ForSale"><Item itemKey={'ForSale'} text={'For Sale'}></Item></a>
+        <a href="https://beachlandproperties.com/#Towns"><Item itemKey={'Towns'} text={'Locations'}></Item></a>
+        <a href="https://beachlandproperties.com/services"><Item itemKey={'Services'} text={'Other Services'}></Item></a>
+        <a href="https://beachlandproperties.com/contact"><Item itemKey={'contact'} text={'Contact Us'}></Item></a>
         
       </Menu>
     </>

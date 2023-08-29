@@ -8,23 +8,11 @@ type Props = {
 
 const ContactForm = ({ property }: Props) => {
 
-  const initialData = {
-    titulo: '',
-    nombre: '',
-    correo: '',
-    numero: '',
-    proposito: '',
-    mensaje: ''
-  }
-
-  const onValidate = (form: any) => {
-   
-  }
-
-  const { form, errors, loading, handleChange, handleSubmit } = useForm(initialData, onValidate)
-
+  
   return (
-    <form className='flex flex-col space-y-2' onSubmit={handleSubmit}>
+    <div>
+    <form action="https://api.web3forms.com/submit" method="POST" className='flex flex-col space-y-2'>
+  <input type="hidden" name="access_key" value="c6342492-834f-4497-9801-901d68cf178b"/>
 
 <div className="">
   <label htmlFor="title" className="">
@@ -32,8 +20,6 @@ const ContactForm = ({ property }: Props) => {
 </label>
 <select 
   name="titulo"
-  value={form.titulo}
-  onChange={handleChange}
   className="mt-1 block w-full rounded-md border py-2 px-3"
    >
     <option>Select the property</option>
@@ -44,15 +30,15 @@ const ContactForm = ({ property }: Props) => {
 
 
       <label className='form-label'>Name</label>
-      <input required type="text" className='border-2 rounded-lg py-2 px-3' name="nombre" value={form.nombre} onChange={handleChange}/>
+      <input required type="text" className='border-2 rounded-lg py-2 px-3' name="nombre"/>
       
 
       <label className='form-label'>Email</label>
-      <input required type="email" className='border-2 rounded-lg py-2 px-3' name="correo" value={form.correo} onChange={handleChange}/>
+      <input required type="email" className='border-2 rounded-lg py-2 px-3' name="correo"/>
       
 
-      <label className='form-label'>Number</label>
-      <input required type="tel" className='border-2 rounded-lg py-2 px-3'name="numero" value={form.numero} onChange={handleChange}/>
+      <label className='form-label'>Phone number</label>
+      <input required type="tel" className='border-2 rounded-lg py-2 px-3'name="numero"/>
       
 
       <div className="">
@@ -61,8 +47,6 @@ const ContactForm = ({ property }: Props) => {
                       </label>
                       <select
                       name="proposito" 
-                      value={form.proposito} 
-                      onChange={handleChange}
                       className="mt-1 block w-full rounded-md border py-2 px-3"
                       >
                         <option>Select an option</option>
@@ -74,11 +58,13 @@ const ContactForm = ({ property }: Props) => {
                     </div>
       
       <label className='form-label'>Message</label>
-      <textarea required className='border-2 rounded-lg py-2 px-3' name="mensaje" value={form.mensaje} onChange={handleChange}/>
+      <textarea required className='border-2 rounded-lg py-2 px-3' name="mensaje"/>
       
 
-      <button className='text-sm text-white bg-gray-900 px-4 py-2 rounded-lg mt-5' disabled={loading}>{loading ? "Sending..." : "Send"}</button>
+      <button type="submit" className='text-sm text-white bg-gray-900 px-4 py-2 rounded-lg mt-5'>Send</button>
     </form>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    </div>
   )
 }
 
