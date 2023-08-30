@@ -6,7 +6,6 @@ export const fetchTown = async() => {
     const data = await res.json();
     const towns: Town[] = data.towns;
 
-    
 
     return towns;
 };
