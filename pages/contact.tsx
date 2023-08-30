@@ -7,8 +7,7 @@ type Props = {}
 
 function contact({}: Props) {
 
-  
-    
+
   return (
     <div>
         <Header />
