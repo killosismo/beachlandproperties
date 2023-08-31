@@ -12,14 +12,14 @@ const ContactForm = ({ property }: Props) => {
   return (
     <div>
     <form action="https://api.web3forms.com/submit" method="POST" className='flex flex-col space-y-2'>
-  <input type="hidden" name="access_key" value="c6342492-834f-4497-9801-901d68cf178b"/>
+  <input type="hidden" name="access_key" value="05f938e8-ab82-462e-9ccc-35843cb2df6e"/>
 
 <div className="">
   <label htmlFor="title" className="">
                       
 </label>
 <select 
-  name="titulo"
+  name="Title"
   className="mt-1 block w-full rounded-md border py-2 px-3"
    >
     <option>Select the property</option>
@@ -30,15 +30,15 @@ const ContactForm = ({ property }: Props) => {
 
 
       <label className='form-label'>Name</label>
-      <input required type="text" className='border-2 rounded-lg py-2 px-3' name="nombre"/>
+      <input required type="text" className='border-2 rounded-lg py-2 px-3' name="Name"/>
       
 
       <label className='form-label'>Email</label>
-      <input required type="email" className='border-2 rounded-lg py-2 px-3' name="correo"/>
+      <input required type="email" className='border-2 rounded-lg py-2 px-3' name="Email"/>
       
 
       <label className='form-label'>Phone number</label>
-      <input required type="tel" className='border-2 rounded-lg py-2 px-3'name="numero"/>
+      <input required type="tel" className='border-2 rounded-lg py-2 px-3'name="Phone"/>
       
 
       <div className="">
@@ -46,7 +46,7 @@ const ContactForm = ({ property }: Props) => {
                       What' is the purpose of your investment in DR?
                       </label>
                       <select
-                      name="proposito" 
+                      name="Purpose" 
                       className="mt-1 block w-full rounded-md border py-2 px-3"
                       >
                         <option>Select an option</option>
@@ -58,7 +58,7 @@ const ContactForm = ({ property }: Props) => {
                     </div>
       
       <label className='form-label'>Message</label>
-      <textarea required className='border-2 rounded-lg py-2 px-3' name="mensaje"/>
+      <textarea required className='border-2 rounded-lg py-2 px-3' name="Message"/>
       
 
       <button type="submit" className='text-sm text-white bg-gray-900 px-4 py-2 rounded-lg mt-5'>Send</button>

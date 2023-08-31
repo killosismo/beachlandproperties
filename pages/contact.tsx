@@ -32,7 +32,7 @@ function contact({}: Props) {
     <p className="mt-2 text-lg leading-8 text-gray-600">- Free Consultation, Speak With Us Today!</p>
   </div>
   <form action="https://api.web3forms.com/submit" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
-  <input type="hidden" name="access_key" value="c6342492-834f-4497-9801-901d68cf178b"/>
+  <input type="hidden" name="access_key" value="05f938e8-ab82-462e-9ccc-35843cb2df6e"/>
     <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
       <div className="sm:col-span-2">
         <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">Name</label>
