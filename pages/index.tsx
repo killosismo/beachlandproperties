@@ -30,8 +30,8 @@ const Home = ( { properties, forInvestorss, towns }: Props) => {
       <Head>
         
         <link rel="icon" href="/favicon.ico" />
-        <title>Beachland Is A Punta Cana Real Estate Investment Firm Targeted To Investors Or Second Home Seekers</title>
-    <meta name="description" content="Beachland Is A Punta Cana Real Estate Investment Firm Targeted To Investors Or Second Home Seekers. Let Us Help You Own Your Dreamed Home Under The Caribbean Sun. Experts In Safe Investments. Only Best Properties, Best Investments. Tax Exemption and more. Starting Below $100k. Free Consultation, Speak With Us Today!" />
+        <title>Beachland Is A Punta Cana Real Estate Investment Firm</title>
+    <meta name="description" content="Let Us Help You Own Your Dreamed Home Under The Caribbean Sun. Experts In Safe Investments. Only Best Properties, Best Investments. Tax Exemption and more. Starting Below $100k. Free Consultation, Speak With Us Today!" />
     <meta name="keywords" content="FOR SALE,FOR RENT,REAL ESTATE,DOMINICAN REPUBLIC,CAP CANA,PUNTA CANA, LAS TERRENAS, SANTO DOMINGO, PUNTA CANA BUSINESS, BUY REAL ESTATE IN PUNTA CANA, DOMINICAN REPUBLIC MORTGAGE LOAN, MORGAGE INTEREST RATE IN THE DOMINICAN REPUBLIC, HOW TO APPLY FOR A LOAN IN DOMINICAN REPUBLIC, BUILDINGS MADE IN THE LAST 5 YEARS, WHITESANDS PUNTA CANA, VISTA CANA PUNTA CANA, CAP CANA PUNTA CANA, BAVARO PUNTA CANA, DOWNTOWN PUNTA CANA, escrow in dominican republic, retirement dominican republic, buying land in dominican republic, dominican republic investor residency, dominican republic retiree residency, property management in dominican republic, punta cana preconstruction, punta cana condos for sale, punta cana real estate,best investments in dominican republic" />
     <meta name="author" content="@Beachland" />
     <meta itemProp="name" content="Beachland Is A Punta Cana Real Estate Investment Firm Targeted To Investors Or Second Home Seekers." />

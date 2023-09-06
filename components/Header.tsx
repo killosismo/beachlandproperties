@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { createRoot } from 'react-dom/client';
 import { Menu, SubMenu, Item } from "burger-menu";
 import Image from 'next/image'
-import Logo from '/public/qBeachLandLogo.jpg'
+import Logo from '/public/2.png'
 import { MagnifyingGlassIcon } from '@heroicons/react/24/solid'
 import Link from 'next/link'
 import 'burger-menu/lib/index.css';
