@@ -1,11 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link';
-import NewsletterForm from './NewsletterForm';
+import NewsletterSubscribe from './NewsletterSubscribe';
 
 
-
-function LargeCard({img, title, description, buttonText}: any ) {
+function LargeCard({img, title, description, className}: any ) {
   return (
     <section className='relative py-16 cursor-pointer'>
         <div className='relative h-96 min-w-[300px]'>
@@ -15,7 +14,7 @@ function LargeCard({img, title, description, buttonText}: any ) {
             <h3 className='text-4xl mb-3 w-64'>{title}</h3>
             <p>{description}</p>
             <div className="mt-6 flex max-w-md gap-x-4">
-            <NewsletterForm />
+            <NewsletterSubscribe />
             </div>
             
         </div>

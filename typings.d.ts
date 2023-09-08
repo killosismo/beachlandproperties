@@ -8,8 +8,8 @@ export interface Property{
     _createdAt: string;
     title: string;
     price: string;
-    bedrooms: number;
-    bathrooms: number;
+    bedrooms: string;
+    bathrooms: string;
     location: geopoint;
     propertyType: string;
     ft: number;
@@ -44,8 +44,8 @@ export interface ForInvestors{
     _createdAt: string;
     title: string;
     price: string;
-    bedrooms: number;
-    bathrooms: number;
+    bedrooms: string;
+    bathrooms: string;
     location: geopoint;
     propertyType: string;
     ft: number; 
@@ -101,8 +101,8 @@ export interface PropertyTown{
         _createdAt: string;
         title: string;
         price: string;
-        bedrooms: number;
-        bathrooms: number;
+        bedrooms: string;
+        bathrooms: string;
         location: geopoint;
         propertyType: string;
         ft: number;

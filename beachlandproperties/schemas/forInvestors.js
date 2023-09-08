@@ -16,12 +16,12 @@ export default {
         {
           name: 'bedrooms',
           title: 'Bedrooms',
-          type: 'number',
+          type: 'string',
         },
         {
           name: 'bathrooms',
           title: 'Bathrooms',
-          type: 'number',
+          type: 'string',
         },
        
         {
