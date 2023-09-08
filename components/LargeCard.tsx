@@ -16,7 +16,6 @@ function LargeCard({img, title, description, className}: any ) {
             <div className="mt-6 flex max-w-md gap-x-4">
             <NewsletterSubscribe />
             </div>
-            
         </div>
     </section>
   )
