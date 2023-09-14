@@ -68,7 +68,10 @@ const Home = ( { properties, forInvestorss, towns }: Props) => {
                 <p>US${property.price}</p>
                   <div className='flex space-x-4'>
                   <p>Bedrooms: {property.bedrooms}</p>
-                <p>Bathrooms: {property.bathrooms}</p>
+                
+                  </div>
+                  <div className='flex space-x-4'>
+                  <p>Bathrooms: {property.bathrooms}</p>
                   </div>
                 </div>
               </div>
