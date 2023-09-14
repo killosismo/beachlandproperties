@@ -40,7 +40,6 @@ const Info = ({ town }: Props) => {
             <div>
               <p className='text-lg lg:text-2xl font-semibold pb-2'>US$ {property.price}</p>
             </div>
-
           </div>
           </div>
         </div> 
