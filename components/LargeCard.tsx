@@ -6,7 +6,7 @@ import NewsletterSubscribe from './NewsletterSubscribe';
 
 function LargeCard({img, title, description, className}: any ) {
   return (
-    <section className='relative py-16 cursor-pointer'>
+    <section className='relative py-16'>
         <div className='relative h-96 min-w-[300px]'>
             <Image src={img} fill className='rounded-2xl object-cover' alt={''} />
         </div>
