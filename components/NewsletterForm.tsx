@@ -75,7 +75,7 @@ const NewsletterForm: React.FC<NewsletterFormProps> = ({ status, message, onVali
             dangerouslySetInnerHTML={{ __html: error || getMessage(message)! }}
           />
         )}
-        {status === 'success' && status !== 'error' && !error && (
+        {status === 'success'  && !error && (
           <div dangerouslySetInnerHTML={{ __html: decode(message) }} />
         )}
       </div>
