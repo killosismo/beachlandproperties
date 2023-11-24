@@ -3,14 +3,12 @@ import Header from "../../components/Header"
 import { GetStaticProps } from "next"
 import { Property } from "../../typings"
 import PortableText from "react-portable-text";
-import Link from "next/link";
 import Footer from "../../components/Footer";
 import Image from "../../components/Image"
 import ModalImage from "react-modal-image";
 
 import ContactForm from "../../components/ContactForm";
-
-import React, { useState } from "react";
+import React from "react";
 
 type Props = {
   property: Property;
@@ -38,6 +36,7 @@ function Property ( {property}: Props)  {
            
 
             </div>
+            
             <div  className="sub-images-section flex flex-wrap overflow-hidden w-1/2">
               {property.images.map(({ _key, asset }, image) => (
             <Image  key={_key} identifier="image" image={asset} />
