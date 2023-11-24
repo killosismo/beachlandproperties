@@ -7,7 +7,10 @@ import Link from "next/link";
 import Footer from "../../components/Footer";
 import Image from "../../components/Image"
 import ModalImage from "react-modal-image";
+
 import ContactForm from "../../components/ContactForm";
+
+import React, { useState } from "react";
 
 type Props = {
   property: Property;
@@ -16,28 +19,34 @@ type Props = {
 
 
 function Property ( {property}: Props)  {
- 
+  
 
     return(
         <main>
           <Header />
           <div className=" flex flex-col max-w-7xl mx-auto px-8 sm:px-16 my-8">
 
-          <div className="images-section flex rounded-xl overflow-hidden">
+          <div className="data-te-lightbox-init images-section flex rounded-xl overflow-hidden">
           
-            <div className="overflow-hidden w-1/2 h-82">
+            <div  className="overflow-hidden w-1/2 h-82">
             <ModalImage className="w-full rounded-xl"
   small={urlFor(property.mainImage).url()!}
   large={urlFor(property.mainImage).url()!}
   hideDownload={true}
   alt=""
 />
+           
+
             </div>
-            <div className="sub-images-section flex flex-wrap overflow-hidden w-1/2">
+            <div  className="sub-images-section flex flex-wrap overflow-hidden w-1/2">
               {property.images.map(({ _key, asset }, image) => (
-            <Image key={_key} identifier="image" image={asset} />
-            ))}
+            <Image  key={_key} identifier="image" image={asset} />
+            )).slice(0,4)}
+            
            </div>
+
+           
+           
       </div>
 
             

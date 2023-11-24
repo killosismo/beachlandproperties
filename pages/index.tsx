@@ -55,6 +55,7 @@ const Home = ( { properties, forInvestorss, towns }: Props) => {
       <Banner />
       <main className='max-w-7xl mx-auto px-8 sm:px-16'>
         <section className='pt-6' id="ForSale">
+          
         <h2 className='text-4xl font-semibold pb-5'>Last Properties Added</h2>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 p-2 md:p-6 '>
         {properties?.map((property) => (
@@ -85,6 +86,20 @@ const Home = ( { properties, forInvestorss, towns }: Props) => {
       </div>
         
       </section>
+      <div className="mx-auto max-w-2xl text-center">
+    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Beachland Properties</h2>
+    <p className="mt-2 text-lg leading-8 text-gray-600">Beachland Is A Punta Cana Real Estate Investment Firm Targeted To Investors Or Second Home Seekers. Why Let Us Help You Own Your Dreamed Home Under The Caribbean Sun?
+    </p>
+    <p className="mt-2 text-lg leading-8 text-gray-600">- Experts In Safe Investments 
+    </p>
+    <p className="mt-2 text-lg leading-8 text-gray-600">- Only Best Properties, Best Investments
+    </p>
+    <p className="mt-2 text-lg leading-8 text-gray-600">- Tax Exemptions and more
+    </p>
+    <p className="mt-2 text-lg leading-8 text-gray-600">- Starting Below $100k
+    </p>
+    <p className="mt-2 text-lg leading-8 text-gray-600">- Free Consultation, Speak With Us Today!</p>
+  </div>
       <LargeCard 
       img={LargeImageCard} 
       title="Keep up to date for awesome deals!" 
