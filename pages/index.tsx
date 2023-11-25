@@ -26,7 +26,7 @@ type Props = {
 const Home = ( { properties, forInvestorss, towns }: Props) => {
   
   return (
-    <div className="">
+    <div className='' >
       <Head>
         
         <link rel="icon" href="/favicon.ico" />
