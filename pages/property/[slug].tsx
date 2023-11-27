@@ -23,8 +23,8 @@ function Property ( {property}: Props)  {
         <main>
           <Header />
           <div className=" flex flex-col max-w-7xl mx-auto px-8 sm:px-16 my-8">
-
-          <div className="data-te-lightbox-init images-section flex rounded-xl overflow-hidden">
+          
+          <div className="images-section flex rounded-xl overflow-hidden">
           
             <div  className="overflow-hidden w-1/2 h-82">
             <ModalImage className="w-full rounded-xl"
@@ -114,7 +114,7 @@ function Property ( {property}: Props)  {
             </div>
             </div>
             
-            <div className=" sticky top-20 w-96 h-fit border rounded-lg shadow-md p-8 mt-10 items-center flex-grow flex-col">
+            <div className=" sticky top-20 h-fit border rounded-lg shadow-md p-8 mt-10 items-center flex-grow flex-col">
             <h1><b>Contact the seller by filling out this form</b></h1>
             <br/>
             
