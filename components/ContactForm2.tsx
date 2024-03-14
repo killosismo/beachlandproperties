@@ -49,7 +49,7 @@ const ContactForm2 = ({ forInvestors }: Props) => {
 
       <div className="">
                       <label htmlFor="purpose" className="">
-                      What' is the purpose of your investment in DR?
+                      What's the goal of your investment in DR?
                       </label>
                       <select
                       name="Purpose" 

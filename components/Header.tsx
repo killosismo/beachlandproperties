@@ -42,7 +42,7 @@ function Header() {
           <div>Other Services</div>
           </a>
           <a href="https://beachlandproperties.com/contact">
-          <div>Contact Us</div>
+          <div>About Us</div>
           </a>
 
         </div>
@@ -55,7 +55,7 @@ function Header() {
         <a href="https://beachlandproperties.com/#ForSale"><Item itemKey={'ForSale'} text={'For Sale'}></Item></a>
         <a href="https://beachlandproperties.com/#Towns"><Item itemKey={'Towns'} text={'Locations'}></Item></a>
         <a href="https://beachlandproperties.com/services"><Item itemKey={'Services'} text={'Other Services'}></Item></a>
-        <a href="https://beachlandproperties.com/contact"><Item itemKey={'contact'} text={'Contact Us'}></Item></a>
+        <a href="https://beachlandproperties.com/contact"><Item itemKey={'contact'} text={'About Us'}></Item></a>
         
       </Menu>
       </div>

@@ -9,7 +9,7 @@ function Banner() {
         
        <video muted autoPlay loop src={'/banner.mp4'}  className="mix-blend-overlay h-full w-full object-cover" />
         <div className='absolute top-1/2 w-full text-center'>
-            <h1 className=' lg:text-3xl sm:text-lg text-white'>Your dreamed home <br/>under the Caribbean sun</h1>
+            <h1 className=' lg:text-4xl sm:text-lg text-white'>Your dreamed home under the Caribbean sun</h1>
             
         </div>
     </div>
