@@ -46,6 +46,7 @@ function Header() {
           </a>
 
         </div>
+         
         
       <div className="my-auto pl-20 visible sm:invisible HAMBURGER-ICON space-y-2 " onClick={() => setIsOpen(!isOpen) }>
       <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
