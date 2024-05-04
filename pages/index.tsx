@@ -56,7 +56,7 @@ const Home = ( { properties, forInvestorss, towns }: Props) => {
       <main className='max-w-7xl mx-auto px-8 sm:px-16'>
         <section className='pt-6' id="ForSale">
           
-        <h2 className='text-4xl font-semibold pb-5'>Last Properties Added</h2>
+        <h2 className='text-4xl font-bold tracking-tight pb-5'>Last Properties Added</h2>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 p-2 md:p-6 '>
         {properties?.map((property) => (
           <Link key={property._id} href={`/property/${property.slug.current}`}>
@@ -107,7 +107,7 @@ const Home = ( { properties, forInvestorss, towns }: Props) => {
       buttonText="Contact Now"
       />
       <section className='pt-6'>
-        <h2 className='text-4xl font-semibold pb-5'>For Investors</h2>
+        <h2 className='text-4xl font-bold tracking-tight pb-5'>For Investors</h2>
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 p-2 md:p-6'>
         {forInvestorss?.map((forInvestors) => (
           <Link key={forInvestors._id} href={`/forInvestors/${forInvestors.slug.current}`}>
@@ -137,7 +137,7 @@ const Home = ( { properties, forInvestorss, towns }: Props) => {
 
 
       <section className='pt-6 ' id="Towns">
-        <h2 className='text-4xl font-semibold pb-5'>Towns</h2>
+        <h2 className='text-4xl font-bold tracking-tight pb-5'>Towns</h2>
       <div className='flex space-x-3 overflow-auto scrollbar-thumb md:p-6'>
         {towns?.map((town) => (
           <Link key={town._id} href={`${town.url}`}>
