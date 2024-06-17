@@ -38,6 +38,7 @@ function Property ( {property}: Props)  {
             </div>
             
             <div  className="sub-images-section flex flex-wrap overflow-hidden w-1/2">
+            
               {property.images.map(({ _key, asset }, image) => (
             <Image  key={_key} identifier="image" image={asset} />
             )).slice(0,4)}
