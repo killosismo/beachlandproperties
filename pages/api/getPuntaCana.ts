@@ -22,3 +22,4 @@ export default async function handler(
   const towns: Town[] = await sanityClient.fetch(query);
   res.status(200).json({ towns })
 }
+
