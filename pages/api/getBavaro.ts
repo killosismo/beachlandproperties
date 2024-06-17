@@ -5,7 +5,7 @@ import { sanityClient } from '../../sanity'
 import { Town } from '../../typings'
 
 const query = groq`
-*[_id == "8638726f-ee1c-4827-a56a-3bbd3b17b49f"] {
+*[_id == "b2d12aa7-ace8-473b-adcd-51a548807a9b"] {
   ...,
   properties[]->
   }
