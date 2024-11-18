@@ -5,6 +5,7 @@ import Header from '../components/Header'
 import PropertyTownCard from '../components/PropertyTownCard'
 import { fetchCapCana } from '../utils/fetchCapCana'
 import { GetStaticProps } from 'next'
+import Head from 'next/head'
 
 
 
@@ -16,6 +17,9 @@ type Props = {
 const capCana = ({ towns }: Props) => {
   return (
     <div className=''>
+      <Head>
+            <title>Cap Cana | Beachland Properties</title>
+          </Head>
     <Header />
     <section className='flex-grow pt-14 px-6'>
 

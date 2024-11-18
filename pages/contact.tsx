@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import Head from 'next/head'
 
 
 type Props = {}
@@ -12,25 +13,34 @@ function contact({}: Props) {
     <div>
         <Header />
     
-    <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+    <section className='flex-grow pt-14 px-6'>
+    <Head>
+            <title>Contact | Beachland Properties</title>
+          </Head>
         
-  <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]" aria-hidden="true">
-    <div className="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#80acff] to-[#89aafc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]" ></div>
-  </div>
-  <div className="mx-auto max-w-2xl text-center">
-    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Beachland Properties</h2>
-    <p className="mt-2 text-lg leading-8 text-gray-600">Beachland Is A Punta Cana Real Estate Investment Firm Targeted To Investors Or Second Home Seekers. Why Let Us Help You Own Your Dreamed Home Under The Caribbean Sun?
-    </p>
-    <p className="mt-2 text-lg leading-8 text-gray-600">- Experts In Safe Investments 
-    </p>
-    <p className="mt-2 text-lg leading-8 text-gray-600">- Only Best Properties, Best Investments
-    </p>
-    <p className="mt-2 text-lg leading-8 text-gray-600">- Tax Exemptions and more
-    </p>
-    <p className="mt-2 text-lg leading-8 text-gray-600">- Starting Below $100k
-    </p>
-    <p className="mt-2 text-lg leading-8 text-gray-600">- Free Consultation, Speak With Us Today!</p>
-  </div>
+    <div className="bg-white">
+        <div className="mx-auto grid grid-cols-1 sm:grid-cols-1 lg:max-w-7xl lg:grid-cols-2 md:grid-cols-2 lg:px-8 pb-5">
+          <div className="grid grid-cols-1 gap-4 sm:gap-6 lg:gap-4 pb-5">
+            <img
+              src="Miguel Martinez.jpeg"
+              alt=""
+              className="rounded-lg bg-gray-100" />
+            
+          </div>
+          <div className=' px-8 grid grid-cols-1 sm:grid-cols-1 pb-5'>
+            
+        
+              <p className="mt-4 text-sm text-gray-500">Hello everyone, my name is Miguel Martinez and I own the Beachland Properties brand, a company associated with the market leader, Urban Realty Group. The Urban Group has offices in Santo Domingo, Santiago, Las Terrenas and Punta Cana, where I work and specialized.</p>
+              <p className="mt-2 text-sm text-gray-500">Spanish is my native tongue and also very proficient in English. Originally I am an Economist (PUCMM-SD) with Master in Economic Development (UAM-MADRID), with plenty experience in statistics, data analysis and business development in the financial sector at both the government and private levels.</p>
+              <p className="mt-2 text-sm text-gray-500">I always liked the exchange with other people and business so I made the change to real estate advisor in 2018 in the up and coming area of ​​Punta Cana. Since then I have accumulated experience in conflict management, in negotiation and interpersonal communication.</p>
+              <p className="mt-2 text-sm text-gray-500">With hundreds of closed businesses and dozens of millions of dollars sold with customers of locations as distant as New Zealand, Poland and Russia, and many other countries of the Americas, like USA, Canada, Colombia, Mexico, etc.</p>
+              <p className="mt-2 text-sm text-gray-500">For me it is an honor to be able to serve and help you out on your endeavors. I am very grateful for this visit to our website, I invite you to see our catalog and share your loved ones. They too could be part of this long list of successful and happy investors!</p>
+
+            
+          </div>
+          
+        </div>
+      </div>
   <form action="https://api.web3forms.com/submit" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
   <input type="hidden" name="access_key" value="05f938e8-ab82-462e-9ccc-35843cb2df6e"/>
     <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -69,7 +79,7 @@ function contact({}: Props) {
   </form>
 
   <script src="https://web3forms.com/client/script.js" async defer></script>
-</div>
+</section>
 <Footer />
 </div>
   )

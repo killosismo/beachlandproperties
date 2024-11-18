@@ -9,6 +9,7 @@ import ModalImage from "react-modal-image";
 
 import ContactForm from "../../components/ContactForm";
 import React from "react";
+import Head from "next/head";
 
 type Props = {
   property: Property;
@@ -21,6 +22,11 @@ function Property ( {property}: Props)  {
 
     return(
         <main>
+          <div>
+            <Head>
+            <title>{property.title} | Beachland Properties</title>
+          </Head>
+          </div>
           <Header />
           <div className=" flex flex-col max-w-7xl mx-auto px-8 sm:px-16 my-8">
           

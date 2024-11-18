@@ -27,10 +27,7 @@ function Header() {
                   </Link>
         </div>
 
-        {/*<div className='flex items-center md:border-2 rounded-full py-2 md:shadow-xl'>
-            <input className='flex-grow pl-5 bg-transparent outline-none text-sm text-gray-600 placeholder-gray-400' type="text" placeholder='Start yout search' />
-            <MagnifyingGlassIcon className=' hidden md:inline-flex h-8 bg-black text-white rounded-full p-2 cursor-pointer md:mx-2'/>
-          </div>*/}
+        
         <div className='flex items-center  space-x-4 invisible lg:visible '>
         <a href="https://beachlandproperties.com/#ForSale">
           <div className='' id="">For Sale</div>
@@ -47,6 +44,10 @@ function Header() {
 
         </div>
          
+        {/*<div className='flex items-center md:border-2 rounded-full py-2 md:shadow-xl invisible lg:visible'>
+            <input className='flex-grow pl-5 bg-transparent outline-none text-sm text-gray-600 placeholder-gray-400' type="text" placeholder='Start your search' />
+            <MagnifyingGlassIcon className=' hidden md:inline-flex h-8 bg-black text-white rounded-full p-2 cursor-pointer md:mx-2'/>
+          </div>*/}
         
       <div className="  my-auto pl-20 visible lg:invisible HAMBURGER-ICON space-y-2 " onClick={() => setIsOpen(!isOpen) }>
       <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
@@ -59,9 +60,11 @@ function Header() {
         <a href="https://beachlandproperties.com/contact"><Item itemKey={'contact'} text={'About Us'}></Item></a>
         
       </Menu>
+      
+      
       </div>
       
-    
+      
         
 
 

@@ -6,6 +6,7 @@ import PropertyTownCard from '../components/PropertyTownCard'
 
 import { GetStaticProps } from 'next'
 import { fetchBavaro } from '../utils/fetchBavaro'
+import Head from 'next/head'
 
 
 
@@ -17,6 +18,11 @@ type Props = {
 const bavaro = ({ towns }: Props) => {
   return (
     <div className=''>
+      
+            <Head>
+            <title>Bavaro | Beachland Properties</title>
+          </Head>
+          
     <Header />
     <section className='flex-grow pt-14 px-6'>
 
@@ -24,7 +30,7 @@ const bavaro = ({ towns }: Props) => {
         <div className="mx-auto grid grid-cols-1 sm:grid-cols-1 lg:max-w-7xl lg:grid-cols-2 md:grid-cols-2 lg:px-8 pb-5">
           <div className="grid grid-cols-1 gap-4 sm:gap-6 lg:gap-4 pb-5">
             <img
-              src="https://cdn.sanity.io/images/lqpgcd61/production/bd4c235e665550304f8c15a3ef1150d24f99ec8a-728x455.jpg?rect=273,0,455,455"
+              src="https://cdn.sanity.io/images/lqpgcd61/production/bd4c235e665550304f8c15a3ef1150d24f99ec8a-996x1024.jpg?rect=273,0,455,455"
               alt=""
               className="rounded-lg bg-gray-100" />
             
